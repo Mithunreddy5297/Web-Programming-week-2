@@ -1,0 +1,115 @@
+<!--Create a web page with 4 frames(Pics,table,list,and hyperlink).
+AIM: To create a page with 4 different frames-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Frames</title>
+    <style>
+        .frame{
+            width: 23%;
+            float: left;
+            padding: 3px;
+            margin: 3px;
+            height: 400px;
+            border-radius: 50px;
+            border: 5px solid  rgb(225, 225, 86);
+            color: rgb(225, 225, 86);
+        }
+        table,tr,td{
+            width: 100%;
+            font-size: smaller;
+        }
+         body{
+            background-color: rgb(19, 17, 17);
+            color: white;
+         }
+        marquee{
+            border: 5px solid  rgb(225, 225, 86);
+            border-radius: 20px;
+            color:  rgb(225, 225, 86);
+        }
+        a{
+            color: rgb(225, 225, 86);
+        }
+    </style>
+</head>
+<body>
+    <marquee direction="right"><h1>DIFFERENT FRAMES</h1></marquee>
+
+    <!--IMAGE-->
+    <div class="frame" id="image-frame">
+        <h2>Picture or Image</h2>
+        <p>"img" tag is used to insert pictures or images in html</p>
+        <img src="1.png" alt="Dark Backgroud" width="100%">
+    </div>
+
+    <!--TABLE-->
+    <div class="frame" id="table-frame">
+        <h2>Table</h2>
+        <p>"table" tag is used to arrange data into rows & columns</p>
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th colspan="2">Phone</th>
+            </tr>
+            <tr>
+                <td>Mithun</td>
+                <td>mithun@gmail.com</td>
+                <td>20</td>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+            </tr>
+            <tr>
+                <td>Puneet</td>
+                <td>puneet@gmail.com</td>
+                <td>19</td>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+            </tr>
+            <tr>
+                <td>Anurag</td>
+                <td>anurag@gmail.com</td>
+                <td>19</td>
+                <td>XXXXXX</td>
+                <td>XXXXXX</td>
+            </tr>
+        </table>
+    </div>
+
+    <!--LIST-->
+    <div class="frame" id="list-frame">
+        <h2>List</h2>
+        <p>"li" tag is used to arrange data in list format</p>
+        
+        <h3>Unordered list</h3>
+        <ul type="square">
+            <li>Sun</li>
+            <li>Moon</li>
+        </ul>
+
+        <h3>Ordered list</h3>
+        <ol type="i">
+            <li>Sun</li>
+            <li>Moon</li>
+        </ol>
+
+        <h3>Description list</h3>
+        <dl>
+            <dt>COD:</dt>
+            <dd>Call of Duty.</dd>
+        </dl>
+    </div>
+
+    <!--HYPERLINK-->
+    <div class="frame" id="link-frame">
+        <h2>Hyperlink</h2>
+        <p>"< a >" tag is also called as Anchor tag is used to create Hyperlink.</p>
+        <a href="https://www.youtube.com" target="_blank">Visit YouTube</a>
+    </div>
+
+</body>
+</html>
